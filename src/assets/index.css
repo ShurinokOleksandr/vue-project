@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Rubik", sans-serif;
+  /*  MAIN COLOR  */
+  --background: hsla(36, 8%, 95%, 1);
+  --background-text: hsla(36, 47%, 11%, 1);
+
+  --surface: hsla(0, 0%, 100%, 1);
+  --surface-text: hsla(0, 0%, 25%, 1);
+
+  --primary: hsla(15, 100%, 60%, 1);
+  --primary-text: hsla(0, 0%, 100%, 1);
+
+  --secondary: hsla(108, 45%, 56%, 1);
+  --secondary-text: hsla(0, 0%, 100%, 1);
+  --secondary-muted: hsl(107, 100%, 94%) ;
+
+
+  /*  GRAYSCALE  */
+  --lightest:hsla(36, 9%, 95%, 1);
+  --light:hsla(0, 0%, 75%, 1);
+  --hard:hsla(0, 0%, 56%, 1);
+  --hardest:hsla(0, 0%, 38%, 1);
+
+
+  /*  PALLETE  */
+  --success:hsla(151, 100%, 28%, 1);
+  --info:hsla(198, 97%, 55%, 1);
+  --warning:hsla(36, 97%, 55%, 1);
+  --error:hsla(360, 100%, 42%, 1);
+
+
+  /*  Font Sizes  desktop 769 - ... */
+
+  /* Extra small text */
+  --fs-xs:12px;
+  --lh-xs:18px;
+
+  /* Small  text */
+  --fs-sm:16px;
+  --lh-sm:24px;
+
+  /* Medium text */
+  --fs-md:18px;
+  --lh-md:27px;
+
+  /* Large text */
+  --fs-lg:24px;
+  --lh-lg:36px;
+
+  /* Extra large text*/
+  --fs-xl:36px;
+  --lh-xl:54px;
+
+
+  /*  Font Sizes  mobile 360- 768 */
+
+  /* Extra small text */
+  --fs-m-xs:8px;
+  --lh-m-xs:12px;
+
+  /* Small  text */
+  --fs-m-sm:12px;
+  --lh-m-sm:18px;
+
+  /* Medium text */
+  --fs-m-md:14px;
+  --lh-m-md:21px;
+
+  /* Large text */
+  --fs-m-lg:20px;
+  --lh-m-lg:30px;
+
+  /* Extra large text*/
+  --fs-m-xl:32px;
+  --lh-m-xl:48px;
+
+  /*  Font weight  */
+  --fw-n:400;
+  --fw-bold:700;
+
+
+  /*  SHADOWS  */
+
+
+  /* Shadow sizes */
+  --sh-xs: 1px 2px 4px 0px;
+  --sh-s:2px 4px 8px 0px;
+  --sh-m:4px 8px 16px 0px;
+  --sh-l:8px 16px 32px 0px;
+  --sh-xl:16px 32px 64px 0px;
+  /* Default shadow */
+  --default-shadow-color:hsla(0, 0%, 0%, 0.1);
+  --default-xs: var(--sh-xs) var(--default-shadow-color);
+  --default-s: var(--sh-s) var(--default-shadow-color);
+  --default-m: var(--sh-m) var(--default-shadow-color);
+  --default-l: var(--sh-l) var(--default-shadow-color);
+  --default-xl: var(--sh-xl) var(--default-shadow-color);
+
+  /* Primary shadow */
+  --primary-shadow-color:hsla(15, 100%, 60%, 0.2);
+  --primary-xs: var(--sh-xs) var(--primary-shadow-color);
+  --primary-s:  var(--sh-s) var(--primary-shadow-color);
+  --primary-m:  var(--sh-m)  var(--primary-shadow-color);
+  --primary-l:  var(--sh-l) var(--primary-shadow-color);
+  --primary-xl: var(--sh-xl) var(--primary-shadow-color);
+
+  /* Secondary shadow */
+  --secondary-shadow-color: hsla(108, 45%, 56%, 0.2);
+  --secondary-xs: var(--sh-xs) var(--secondary-shadow-color);
+  --secondary-s:  var(--sh-s) var(--secondary-shadow-color);
+  --secondary-m:  var(--sh-m)  var(--secondary-shadow-color);
+  --secondary-l:  var(--sh-l) var(--secondary-shadow-color);
+  --secondary-xl: var(--sh-xl) var(--secondary-shadow-color);
+}
+
+
+/*@layer base {*/
+
+/*  .dark {*/
+/*    --background: 222.2 84% 4.9%;*/
+/*    --foreground: 210 40% 98%;*/
+
+/*    --muted: 217.2 32.6% 17.5%;*/
+/*    --muted-foreground: 215 20.2% 65.1%;*/
+
+/*    --popover: 222.2 84% 4.9%;*/
+/*    --popover-foreground: 210 40% 98%;*/
+
+/*    --card: 222.2 84% 4.9%;*/
+/*    --card-foreground: 210 40% 98%;*/
+
+/*    --border: 217.2 32.6% 17.5%;*/
+/*    --input: 217.2 32.6% 17.5%;*/
+
+/*    --primary: 210 40% 98%;*/
+/*    --primary-foreground: 222.2 47.4% 11.2%;*/
+
+/*    --secondary: 217.2 32.6% 17.5%;*/
+/*    --secondary-foreground: 210 40% 98%;*/
+
+/*    --accent: 217.2 32.6% 17.5%;*/
+/*    --accent-foreground: 210 40% 98%;*/
+
+/*    --destructive: 0 62.8% 30.6%;*/
+/*    --destructive-foreground: 210 40% 98%;*/
+
+/*    --ring: 212.7 26.8% 83.9%;*/
+/*  }*/
+/*}*/
