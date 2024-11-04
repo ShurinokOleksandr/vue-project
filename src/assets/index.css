@@ -5,6 +5,22 @@
 @tailwind utilities;
 
 :root {
+  ::-webkit-scrollbar {
+    width:  6px;              /* Ширина вертикальной полосы прокрутки */
+    height:  6px;             /* Высота горизонтальной полосы прокрутки */
+  }
+
+  /* Стили для фона полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Цвет трека (фон полосы прокрутки) */
+    border-radius: 10px;       /* Закругление углов */
+  }
+
+  /* Стили для "бегунка" (ползунка) полосы прокрутки */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);    /* Цвет бегунка */
+    border-radius: 10px;       /* Закругление углов */
+  }
   font-family: "Rubik", sans-serif;
   /*  MAIN COLOR  */
   --background: hsla(36, 8%, 95%, 1);
