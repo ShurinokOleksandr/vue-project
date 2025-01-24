@@ -67,7 +67,6 @@ export default {
         'primary-m':'var(--primary-m)',
         'primary-l':'var(--primary-l)',
       },
-     
       animation: {
         "collapsible-down": "collapsible-down 1s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
@@ -75,11 +74,19 @@ export default {
         "fade-opacity": "fade-opacity 0.2s ease-in-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+     
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         lg: "var(--radius)",
+      },
+      screens: {
+        '2xl': '1208px',
+        xl: '1208px',
+        lg: '1208px',
+        sm: '360px',
+        md: '768px',  // контейнер 100% ширины на малых экранах
       },
 
     },
@@ -120,8 +127,8 @@ export default {
         '2xl': '1208px',
         xl: '1208px',
         lg: '1208px',
-        sm: '360px',
-        md: '100%',  // контейнер 100% ширины на малых экранах
+        md: '728px',  // контейнер 100% ширины на малых экранах
+        sm: '100%',
       },
       padding: {
         DEFAULT: '20px',

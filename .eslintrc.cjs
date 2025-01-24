@@ -16,6 +16,7 @@ module.exports = {
     "vue/no-multi-spaces": ["error", {
       "ignoreProperties": false
     }],
+    'vue/multi-word-component-names': 'off',
     // 'vue/html-quotes':["error", "single"],
     'vue/html-indent':['error',4],
   },
