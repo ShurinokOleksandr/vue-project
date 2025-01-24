@@ -8,7 +8,7 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         secondary:
-          'bg-secondary text-secondaryText p-4 gap-2 disabled:text-secondary disabled:bg-secondaryMuted transition-opacity duration-300 hover:opacity-85',
+          'bg-secondary text-secondaryText  gap-2 disabled:text-secondary disabled:bg-secondaryMuted transition-opacity duration-300 hover:opacity-85',
         outline:
           'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
         destructive:
@@ -23,7 +23,7 @@ export const buttonVariants = cva(
         lg: 'h-10 rounded-md px-8',
         default: 'h-9 px-4 py-2',
         medium:'w-[140px] h-10',
-        icon: 'h-9 w-9',
+        icon: 'h-10 w-10',
       },
     },
     defaultVariants: {
