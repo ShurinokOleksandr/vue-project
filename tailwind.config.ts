@@ -91,6 +91,10 @@ export default {
 
     },
     fontSize: {
+      '2xl_bold': ['var(--fs-2xl)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-2xl)',
+      }],
       xs_bold: ['var(--fs-xs)', {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-xs)',
@@ -99,23 +103,24 @@ export default {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-xl)',
       }],
+      m_bold: ['var(--fs-md)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-md)',
+      }],
+      l_bold: ['var(--fs-lg)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-l)',
+      }],
       s_bold: ['var(--fs-s)', {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-s)',
-      }],
-      m_bold: ['var(--fs-m)', {
-        fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-m)',
-      }],
-      l_bold: ['var(--fs-l)', {
-        fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-l)',
       }],
       xs_mob: ['var(--fs-m-xs)', 'var(--lh-m-xs)'],
       xl_mob: ['var(--fs-m-xl)', 'var(--lh-m-xl)'],
       s_mob: ['var(--fs-m-s)', 'var(--lh-m-s)'],
       m_mob: ['var(--fs-m-m)', 'var(--lh-m-m)'],
       l_mob: ['var(--fs-m-l)', 'var(--lh-m-l)'],
+      '2xl':['var(--fs-2xl)','var(--lh-2xl)'],
       xs: ['var(--fs-xs)', 'var(--lh-xs)'],
       xl: ['var(--fs-xl)', 'var(--lh-xl)'],
       s: ['var(--fs-s)', 'var(--lh-s)'],
