@@ -1,6 +1,4 @@
 <script setup lang="ts">
-
-
 import {
     ChevronDownIcon,
     LogoNameIcon,
@@ -35,7 +33,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
 </script>
 
 <template>
-    <header class="bg-surface shadow-default-s py-4">
+    <header class="relative z-1 bg-surface shadow-default-s py-4">
         <section class="container flex md:justify-center justify-between lg:gap-10 gap-5">
             <!--   LOGO   -->
             <div class="flex gap-10">
@@ -72,7 +70,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                         v-if="inputValueModel"
                     >
                         <div
-                            class="  w-full h-[150px] overflow-auto rounded-t-none rounded py-2 px-4 border-x-[1.5px] border-b-[1.5px] border-secondary bg-surface text-sm text-surfaceText "
+                            class="w-full h-[150px] overflow-auto rounded-t-none rounded py-2 px-4 border-x-[1.5px] border-b-[1.5px] border-secondary bg-surface text-sm text-surfaceText "
                         >
                             <ul class="flex flex-col gap-2">
                                 <li class=" hover:text-s_bold cursor-pointer">product</li>
