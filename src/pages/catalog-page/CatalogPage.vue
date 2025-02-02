@@ -3,6 +3,7 @@
 </script>
 
 <template>
+
     <div>This is catalog page</div>
 </template>
 

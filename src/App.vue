@@ -5,8 +5,10 @@ import './assets/index.css';
 
 </script>
 <template>
-    <Header/>
-    <RouterView/>
+    <div class="bg-backgroundMain">
+        <Header/>
+        <RouterView/>
+    </div>
 </template>
 
 <style scoped>

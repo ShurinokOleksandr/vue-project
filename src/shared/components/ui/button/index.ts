@@ -19,11 +19,12 @@ export const buttonVariants = cva(
         ghost: 'hover:bg-accent hover:text-accent-foreground',
       }, 
       size: {
-        sm: 'h-8 rounded-md px-3 text-xs',
         lg: 'h-10 rounded-md px-8',
+        sm: 'h-8 rounded-md px-3',
         default: 'h-9 px-4 py-2',
         medium:'w-[140px] h-10',
         icon: 'h-10 w-10',
+        custom:'',
       },
     },
     defaultVariants: {

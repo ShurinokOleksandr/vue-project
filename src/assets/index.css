@@ -25,6 +25,7 @@
   /*  MAIN COLOR  */
   --background: hsla(36, 8%, 95%, 1);
   --background-text: hsla(36, 47%, 11%, 1);
+  --background-main:hsla(47, 63%, 95%, 1);
 
   --surface: hsla(0, 0%, 100%, 1);
   --surface-text: hsla(0, 0%, 25%, 1);
@@ -75,6 +76,27 @@
   /* Extra Extra large text*/
   --fs-2xl:48px;
   --lh-2xl:60px;
+
+  /*  Font Sizes for Headers  desktop 769 - ... */
+  /* Extra small text */
+  --fs-h-xs:18px;
+  --lh-h-xs:27px;
+
+  /* Small  text */
+  --fs-h-sm:24px;
+  --lh-h-sm:36px;
+
+  /* Medium text */
+  --fs-h-md:36px;
+  --lh-h-md:54px;
+
+  /* Large text */
+  --fs-h-lg:48px;
+  --lh-h-lg:60px;
+
+  /* Extra large text*/
+  --fs-h-xl:64px;
+  --lh-h-xl:96px;
 
   /*  Font Sizes  mobile 360- 768 */
 
