@@ -145,20 +145,20 @@ export default {
       l: ['var(--fs-lg)', 'var(--lh-lg)'],
     },
     container: {
+      // padding: {
+      //   DEFAULT: '0px',
+      //   '2xl': '20px',
+      //   xl: '20px',
+      //   lg: '20px',
+      //   md: '16px',
+      //   sm: '16px',
+      // },
       screens: {
         '2xl': '1208px',
         xl: '1208px',
         lg: '1208px',
-        md: '728px',  // контейнер 100% ширины на малых экранах
+        md: '728px',  
         sm: '100%',
-      },
-      padding: {
-        DEFAULT: '20px',
-        '2xl': '20px',
-        xl: '20px',
-        lg: '20px',
-        md: '16px',
-        sm: '16px',
       },
       center: true,
     },

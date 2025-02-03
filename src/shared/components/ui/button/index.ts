@@ -9,21 +9,22 @@ export const buttonVariants = cva(
       variant: {
         secondary:
           'bg-secondary text-secondaryText  gap-2 disabled:text-secondary disabled:bg-secondaryMuted transition-opacity duration-300 hover:opacity-85',
-        outline:
-          'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+        secondaryOutline:
+            'bg-transparent text-secondary disabled:text-secondary disabled:bg-secondaryMuted   duration-300 border border-secondary',
         destructive:
           'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
         default:
           'bg-primary text-primary-foreground shadow ',
         link: 'text-primary underline-offset-4 hover:underline',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
+        outline: 'border bg-transparent',
       }, 
       size: {
-        lg: 'h-10 rounded-md px-8',
-        sm: 'h-8 rounded-md px-3',
         default: 'h-9 px-4 py-2',
         medium:'w-[140px] h-10',
+        lg: 'h-10 w-full',
         icon: 'h-10 w-10',
+        sm: 'h-8 px-3',
         custom:'',
       },
     },
