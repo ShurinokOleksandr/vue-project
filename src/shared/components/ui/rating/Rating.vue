@@ -8,7 +8,7 @@
             as="div"
         >
             <Primitive
-                class="focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                class="focus:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-500"
                 :tabindex="currentRating === n ? 0 : -1"
                 :aria-checked="currentRating === n"
                 @keydown.enter="setRating(n)"
@@ -65,7 +65,8 @@ const props = defineProps({
     maxStars: {
         type: Number,
         default: 5
-    }
+    },
+
 })
 
 // Emit

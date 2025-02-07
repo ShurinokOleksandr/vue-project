@@ -22,6 +22,7 @@ export default {
         backgroundMain:"var(--background-main)",
         secondaryMuted:"var(--secondary-muted)",
         secondaryText:"var(--secondary-text)",
+        primaryMuted:"var(--primary-muted)",
         primaryText:"var(--primary-text)",
         surfaceText:"var(--surface-text)",
         background: "var(--background)",
