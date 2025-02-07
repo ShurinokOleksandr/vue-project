@@ -2,10 +2,10 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import { fileURLToPath, URL } from 'node:url'
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import tailwind from "@tailwindcss/vite";
 import autoprefixer from 'autoprefixer'
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
-import tailwind from 'tailwindcss'
 
 // https://vitejs.dev/config/
 export default defineConfig({

@@ -33,7 +33,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
 </script>
 
 <template>
-    <header class="relative z-1 bg-surface shadow-default-s py-4">
+    <header class="relative z-10 bg-surface shadow-default-s py-4">
         <section class="container flex md:justify-center justify-between lg:gap-10 gap-5">
             <!--   LOGO   -->
             <div class="flex gap-10">

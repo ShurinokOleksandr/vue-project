@@ -1,34 +1,68 @@
 <script setup lang="ts">
-import { useMediaQuery } from '@vueuse/core';
 
-const isSmallScreen = useMediaQuery('(max-width:768px)')
+import { Banner, Button } from '@/shared/components/ui';
+import { ChevronDownIcon } from '@/shared/components';
+import { Product } from '@/modules/product';
+import { ref } from 'vue';
+
+const rating = ref(4)
 
 </script>
 
 <template>
     <div class="">
-        <!--Banner-->
-        <div class="relative xl:h-[200px] md:h-40 sm:h-20   ">
-            <img class="absolute w-full h-full object-cover" src="../../assets/banner/banner.png" alt="Banner">
-            <div class="container flex items-center  md:justify-normal sm:justify-center  h-full gap-x-[8px]">
-                <template v-if="!isSmallScreen">
-                    <div>
-                        <img
-                            class="lg:w-full lg:h-full md:w-[198px] lg:mt-0 md:mt-10 md:h-[132px] relative z-10 object-contain"
-                            src="../../assets/banner/banner-products.png"
-                            alt="Banner"
-                        >
+
+        <!--banner-->
+        <Banner/>
+        <div class="container mt-20">
+            <div class="flex flex-col gap-[120px]">
+                <!--Акции-->
+                <div class="flex flex-col gap-10 ">
+                    <div class="flex items-center justify-between">
+                        <p class="text-md_header text-surfaceText">Акции</p>
+                        <Button class=" relative flex items-center gap-4 snake-border" variant="ghost" size="medium">
+                            <p class="hover-underline-animation left text-s text-grayscale-hardest">Все акции</p>
+                            <ChevronDownIcon class="-rotate-90" />
+                        </Button>
                     </div>
-                </template>
-                <p class="relative z-10 lg:text-2xl_bold lg:mt-0 md:mt-5 md:text-l_bold sm:text-m_bold text-surfaceText">
-                    Доставка бесплатно от 1000 ₴
-                </p>
+                    <!--Product list -->
+                    <div class="flex flex-wrap gap-10">
+                        <!--Product Card-->
+                        <Product/>
+                        <div class="shadow-[#b6b6b6] shadow-inner">asasd</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transition: transform 0.4s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(0.9);
+}
+
+.hover-underline-animation.left::after {
+    transform-origin: bottom right ;
+}
+
+.hover-underline-animation.left:hover::after {
+    transform-origin: bottom left;
+}
 
 
 </style>
