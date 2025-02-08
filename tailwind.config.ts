@@ -146,15 +146,15 @@ export default {
       l: ['var(--fs-lg)', 'var(--lh-lg)'],
     },
     container: {
-      // padding: {
-      //   DEFAULT: '0px',
-      //   '2xl': '20px',
-      //   xl: '20px',
-      //   lg: '20px',
-      //   md: '16px',
-      //   sm: '16px',
-      // },
-      screens: {
+      padding: {
+        DEFAULT: '6px',
+        '2xl': '6px',
+        xl: '6px',
+        lg: '6px',
+        md: '6px',
+        sm: '6px',
+      },
+      width: {
         '2xl': '1208px',
         xl: '1208px',
         lg: '1208px',

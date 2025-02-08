@@ -29,7 +29,6 @@ const rating = ref(4)
                     <div class="flex flex-wrap gap-10">
                         <!--Product Card-->
                         <Product/>
-                        <div class="shadow-[#b6b6b6] shadow-inner">asasd</div>
                     </div>
                 </div>
             </div>

@@ -39,7 +39,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
             <div class="flex gap-10">
                 <div class="flex items-center gap-[11.41px]">
                     <LogoIcon/>
-                    <template v-if="!isMediumScreen || isSmallScreen && !isMobileScreen ">
+                    <template v-if="!isMediumScreen && !isMobileScreen">
                         <LogoNameIcon />
                     </template>
                 </div>

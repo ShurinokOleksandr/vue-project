@@ -8,11 +8,11 @@ import { MinusIcon,PlusIcon, Button } from '@/shared/components';
         class="flex justify-between items-center bg-secondary p-2"
         size="lg"
     >
-        <div class="inset-shadow-xs">
+        <div class="active:shadow-inner ">
             <MinusIcon/>
         </div>
         <p class="text-primaryText">5</p>
-        <div>
+        <div class="active:shadow-inner ">
             <PlusIcon/>
         </div>
     </Button>
