@@ -147,12 +147,12 @@ export default {
     },
     container: {
       padding: {
-        DEFAULT: '6px',
-        '2xl': '6px',
-        xl: '6px',
-        lg: '6px',
-        md: '6px',
-        sm: '6px',
+        DEFAULT: '4px',
+        '2xl': '4px',
+        xl: '4px',
+        lg: '4px',
+        md: '4px',
+        sm: '4px',
       },
       width: {
         '2xl': '1208px',

@@ -26,8 +26,11 @@ const rating = ref(4)
                         </Button>
                     </div>
                     <!--Product list -->
-                    <div class="flex flex-wrap gap-10">
+                    <div class="flex flex-wrap md:gap-9 sm:gap-7">
                         <!--Product Card-->
+                        <Product/>
+                        <Product/>
+                        <Product/>
                         <Product/>
                     </div>
                 </div>
