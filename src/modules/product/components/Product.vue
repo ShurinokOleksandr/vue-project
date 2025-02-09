@@ -1,11 +1,10 @@
 <script setup lang="ts">
 
-import { QuantitySelector, SaveIcon ,Button, Rating } from '@/shared/components';
-import { useElementHover, useMediaQuery } from '@vueuse/core';
+import { QuantitySelector, SaveIcon, Button, Rating } from '@/shared/components';
+import { useElementHover } from '@vueuse/core';
 import { ref } from 'vue';
 
 
-const countProductInCart = ref(0)
 const ratingValue = ref(3);
 const refButtonHover = ref()
 const isButtonHover = useElementHover(refButtonHover)
