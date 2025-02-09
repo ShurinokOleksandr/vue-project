@@ -2,7 +2,6 @@
 import { type AvatarImageProps, AvatarImage } from 'radix-vue'
 
 const props = defineProps<AvatarImageProps>()
-console.log(props)
 </script>
 
 <template>

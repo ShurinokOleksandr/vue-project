@@ -1,8 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+layer(base);
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@config '../../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--background, currentColor);
+  }
+}
 
 :root {
   ::-webkit-scrollbar {
@@ -25,12 +46,14 @@
   /*  MAIN COLOR  */
   --background: hsla(36, 8%, 95%, 1);
   --background-text: hsla(36, 47%, 11%, 1);
+  --background-main:hsla(47, 63%, 95%, 1);
 
   --surface: hsla(0, 0%, 100%, 1);
   --surface-text: hsla(0, 0%, 25%, 1);
 
   --primary: hsla(15, 100%, 60%, 1);
   --primary-text: hsla(0, 0%, 100%, 1);
+  --primary-muted:	hsl(25, 92%, 86%, 1);
 
   --secondary: hsla(108, 45%, 56%, 1);
   --secondary-text: hsla(0, 0%, 100%, 1);
@@ -72,7 +95,30 @@
   /* Extra large text*/
   --fs-xl:36px;
   --lh-xl:54px;
+  /* Extra Extra large text*/
+  --fs-2xl:48px;
+  --lh-2xl:60px;
 
+  /*  Font Sizes for Headers  desktop 769 - ... */
+  /* Extra small text */
+  --fs-h-xs:18px;
+  --lh-h-xs:27px;
+
+  /* Small  text */
+  --fs-h-sm:24px;
+  --lh-h-sm:36px;
+
+  /* Medium text */
+  --fs-h-md:36px;
+  --lh-h-md:54px;
+
+  /* Large text */
+  --fs-h-lg:48px;
+  --lh-h-lg:60px;
+
+  /* Extra large text*/
+  --fs-h-xl:64px;
+  --lh-h-xl:96px;
 
   /*  Font Sizes  mobile 360- 768 */
 

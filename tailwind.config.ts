@@ -19,8 +19,10 @@ export default {
           info:"var(--info)",
         },
         backgroundText: "var(--background-text)",
+        backgroundMain:"var(--background-main)",
         secondaryMuted:"var(--secondary-muted)",
         secondaryText:"var(--secondary-text)",
+        primaryMuted:"var(--primary-muted)",
         primaryText:"var(--primary-text)",
         surfaceText:"var(--surface-text)",
         background: "var(--background)",
@@ -91,6 +93,26 @@ export default {
 
     },
     fontSize: {
+      xs_header: ['var(--fs-h-xs)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-h-xs)',
+      }],
+      sm_header: ['var(--fs-h-sm)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-h-sm)',
+      }],
+      md_header: ['var(--fs-h-md)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-h-md)',
+      }],
+      lg_header: ['var(--fs-h-lg)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-h-lg)',
+      }],
+      '2xl_bold': ['var(--fs-2xl)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-2xl)',
+      }],
       xs_bold: ['var(--fs-xs)', {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-xs)',
@@ -99,44 +121,45 @@ export default {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-xl)',
       }],
-      s_bold: ['var(--fs-s)', {
+      m_bold: ['var(--fs-md)', {
         fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-s)',
+        lineHeight: 'var(--lh-md)',
       }],
-      m_bold: ['var(--fs-m)', {
+      l_bold: ['var(--fs-lg)', {
         fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-m)',
+        lineHeight: 'var(--lh-lg)',
       }],
-      l_bold: ['var(--fs-l)', {
+      s_bold: ['var(--fs-sm)', {
         fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-l)',
+        lineHeight: 'var(--lh-sm)',
       }],
       xs_mob: ['var(--fs-m-xs)', 'var(--lh-m-xs)'],
       xl_mob: ['var(--fs-m-xl)', 'var(--lh-m-xl)'],
-      s_mob: ['var(--fs-m-s)', 'var(--lh-m-s)'],
-      m_mob: ['var(--fs-m-m)', 'var(--lh-m-m)'],
-      l_mob: ['var(--fs-m-l)', 'var(--lh-m-l)'],
+      s_mob: ['var(--fs-m-sm)', 'var(--lh-m-sm)'],
+      m_mob: ['var(--fs-m-md)', 'var(--lh-m-md)'],
+      l_mob: ['var(--fs-m-lg)', 'var(--lh-m-lg)'],
+      '2xl':['var(--fs-2xl)','var(--lh-2xl)'],
       xs: ['var(--fs-xs)', 'var(--lh-xs)'],
       xl: ['var(--fs-xl)', 'var(--lh-xl)'],
-      s: ['var(--fs-s)', 'var(--lh-s)'],
-      m: ['var(--fs-m)', 'var(--lh-m)'],
-      l: ['var(--fs-l)', 'var(--lh-l)'],
+      s: ['var(--fs-sm)', 'var(--lh-sm)'],
+      m: ['var(--fs-md)', 'var(--lh-md)'],
+      l: ['var(--fs-lg)', 'var(--lh-lg)'],
     },
     container: {
-      screens: {
+      padding: {
+        DEFAULT: '4px',
+        '2xl': '4px',
+        xl: '4px',
+        lg: '4px',
+        md: '4px',
+        sm: '4px',
+      },
+      width: {
         '2xl': '1208px',
         xl: '1208px',
         lg: '1208px',
-        md: '728px',  // контейнер 100% ширины на малых экранах
+        md: '728px',  
         sm: '100%',
-      },
-      padding: {
-        DEFAULT: '20px',
-        '2xl': '20px',
-        xl: '20px',
-        lg: '20px',
-        md: '16px',
-        sm: '16px',
       },
       center: true,
     },

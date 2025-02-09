@@ -1,2 +1,5 @@
+export { QuantitySelector } from './quantity-selector'
 export { Button } from './button'
+export { Banner } from './banner'
+export { Rating } from './rating'
 export { Input } from './input'
