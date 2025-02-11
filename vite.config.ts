@@ -24,5 +24,5 @@ export default defineConfig({
     postcss: {
       plugins: [tailwind(), autoprefixer()],
     },
-  }
+  },
 })
