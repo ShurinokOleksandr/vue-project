@@ -44,13 +44,13 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts" >
 import { Primitive } from 'radix-vue'
 import { watch, ref } from 'vue'
 
 const props = defineProps({
     modelValue: {
-        validator: (value) => value >= 0 && value <= 5,
+        validator: (value: number) => value >= 0 && value <= 5,
         type: Number,
         default: 0
     },
@@ -77,7 +77,7 @@ const currentRating = ref(props.modelValue)
 const hoveredStar = ref(0)
 
 // Установка рейтинга
-const setRating = (rating) => {
+const setRating = (rating: number) => {
     if (rating !== currentRating.value) {
         currentRating.value = rating
         emit('update:modelValue', rating)
