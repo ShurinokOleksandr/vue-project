@@ -18,15 +18,59 @@ const rating = ref(4)
             <div class="flex flex-col gap-[120px]">
                 <!--Акции-->
                 <div class="flex flex-col gap-10 ">
-                    <div class="flex items-center justify-between">
+                    <div class="container flex items-center justify-between">
                         <p class="text-md_header text-surfaceText">Акции</p>
-                        <Button class=" relative flex items-center gap-4 snake-border" variant="ghost" size="medium">
+                        <Button class="max-w-52 relative flex items-center gap-4 snake-border" variant="ghost" size="custom">
                             <p class="hover-underline-animation left text-s text-grayscale-hardest">Все акции</p>
                             <ChevronDownIcon class="-rotate-90" />
                         </Button>
                     </div>
                     <!--Product list -->
-                    <div class="flex flex-wrap md:gap-9 sm:gap-7">
+                    <div class="flex flex-wrap justify-between">
+                        <!--Product Card-->
+                        <Product/>
+                        <Product/>
+                        <Product/>
+                        <Product/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-20">
+            <div class="flex flex-col gap-[120px]">
+                <!--Акции-->
+                <div class="flex flex-col gap-10 ">
+                    <div class="flex items-center justify-between">
+                        <p class="text-md_header text-surfaceText">Новые</p>
+                        <Button class="max-w-52 relative flex items-center gap-4 snake-border" variant="ghost" size="custom">
+                            <p class="hover-underline-animation left text-s text-grayscale-hardest">Все Новые</p>
+                            <ChevronDownIcon class="-rotate-90" />
+                        </Button>
+                    </div>
+                    <!--Product list -->
+                    <div class="flex flex-wrap justify-between">
+                        <!--Product Card-->
+                        <Product/>
+                        <Product/>
+                        <Product/>
+                        <Product/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-20">
+            <div class="flex flex-col gap-[120px]">
+                <!--Акции-->
+                <div class="flex flex-col gap-10 ">
+                    <div class="flex items-center justify-between">
+                        <p class="text-md_header text-surfaceText">Ранее просмотренные</p>
+                        <Button class="max-w-52 relative flex items-center gap-4 snake-border" variant="ghost" size="custom">
+                            <p class="hover-underline-animation left text-s text-grayscale-hardest">Все просмотренные</p>
+                            <ChevronDownIcon class="-rotate-90" />
+                        </Button>
+                    </div>
+                    <!--Product list -->
+                    <div class="flex flex-wrap justify-between">
                         <!--Product Card-->
                         <Product/>
                         <Product/>

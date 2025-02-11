@@ -15,7 +15,7 @@ const addToCart = () => isLiked.value = !isLiked.value
 </script>
 
 <template>
-    <div class="bg-white shadow-default-xs xl:w-[17rem] md:w-[14rem] sm:w-[10rem] h-[349px] xl:last:block md:last:hidden">
+    <div class="bg-white shadow-default-xs xl:w-[17rem] md:w-[14rem] sm:w-[10rem] xl:h-[349px] h-full xl:last:block md:last:hidden">
         <div class="relative">
             <img src="/src/assets/blini.jpg" alt="product">
             <!--Ставить условие наличия скидки-->
@@ -42,7 +42,7 @@ const addToCart = () => isLiked.value = !isLiked.value
                 </div>
             </div>
             <div>
-                <p class="xl:w-[17rem] md:w-[14rem] xs:w-[10rem] h-[48px] xl:text-s md:text-[5px] text-surfaceText line-clamp-2">
+                <p class="xl:w-[16rem] md:w-[13rem] sm:w-[9rem] h-[48px] xl:text-s text-surfaceText line-clamp-2">
                     Г/Ц Блинчики с мясомsss sвес, Россия Г/Ц Блинчики с мясом вес, Россия
                     Г/Ц Блинчики с мясомss вес, Россия Г/Ц Блинчики с мясом вес, Россия
                 </p>
