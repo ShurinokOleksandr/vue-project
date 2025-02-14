@@ -1,19 +1,21 @@
 <script setup lang="ts">
 
-import { QuantitySelector, SaveIcon ,Button, Rating } from '@/shared/components';
+import { QuantitySelector, SaveIcon, Button, Rating } from '@/shared/components';
 import { useElementHover } from '@vueuse/core';
 import { ref } from 'vue';
 
 
-const countProductInCart = ref(0)
 const ratingValue = ref(3);
 const refButtonHover = ref()
 const isButtonHover = useElementHover(refButtonHover)
 const isLiked = ref(true)
+const addToCart = () => isLiked.value = !isLiked.value
+
+
 </script>
 
 <template>
-    <div class="bg-white shadow-default-xs w-[272px] h-[349px]">
+    <div class="bg-white shadow-default-xs xl:w-[17rem] md:w-[14rem] sm:w-[10rem] xl:h-[349px] h-full xl:last:block md:last:hidden">
         <div class="relative">
             <img src="/src/assets/blini.jpg" alt="product">
             <!--Ставить условие наличия скидки-->
@@ -40,7 +42,7 @@ const isLiked = ref(true)
                 </div>
             </div>
             <div>
-                <p class="w-[256px] h-[48px] text-s text-surfaceText line-clamp-2">
+                <p class="xl:w-[16rem] md:w-[13rem] sm:w-[9rem] h-[48px] xl:text-s text-surfaceText line-clamp-2">
                     Г/Ц Блинчики с мясомsss sвес, Россия Г/Ц Блинчики с мясом вес, Россия
                     Г/Ц Блинчики с мясомss вес, Россия Г/Ц Блинчики с мясом вес, Россия
                 </p>
@@ -54,12 +56,13 @@ const isLiked = ref(true)
             <Button
                 :variant="isButtonHover ? 'primary' : 'secondaryOutline'"
                 ref="refButtonHover"
+                @click="addToCart"
                 v-if="!isLiked"
                 size="lg"
             >
                 В корзину
             </Button>
-            <QuantitySelector v-else/>
+            <QuantitySelector @click="addToCart" v-else/>
         </div>
     </div>
 

@@ -34,7 +34,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
 
 <template>
     <header class="relative z-10 bg-surface shadow-default-s py-4">
-        <section class="container flex md:justify-center justify-between lg:gap-10 gap-5">
+        <section class="container flex   justify-between lg:gap-10 gap-5">
             <!--   LOGO   -->
             <div class="flex gap-10">
                 <div class="flex items-center gap-[11.41px]">
@@ -54,7 +54,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                         </Button>
                     </div>
                 </template>
-                <div class="relative flex items-center lg:w-[375px] md:w-[325px] w-[260px]">
+                <div class="relative flex items-center lg:w-[375px] md:w-[325px] sm:w-[260px] w-full">
                     <Input
                         class="h-10 w-full border-grayscale-light caret-secondary border-[1.5px] bg-surface text-sm text-surfaceText placeholder:text-grayscale-hard focus-visible:border-secondary"
                         :class="[inputValueModel ? 'border-b-[0px] rounded-b-none border-secondary' : '' ]"
@@ -141,56 +141,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
             </template>
         </section>
     </header>
-    <template v-if="isSmallScreen">
-        <div class="absolute bg-surface shadow-default-s inset-x-0 bottom-0  ">
-            <nav class="flex justify-between items-center px-4 py-2">
-                <Button variant="ghost" size="icon" >
-                    <span class="inline-flex flex-col gap-2 justify-center items-center">
-                        <MenuIcon />
-                        <p class="text-xs_mob">Каталок</p>
-                    </span>
-                </Button>
-                <ul class="flex   gap-9 justify-between items-center " >
-                    <li >
-                        <a class="flex flex-col gap-1 justify-center items-center text-xs_mob" href="#">
-                            <span><SaveIcon/></span>
-                            <span> Избранное</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex flex-col gap-1 justify-center items-center text-xs_mob" href="#">
-                            <span><BoxIcon/></span>
-                            <span> Заказы</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex flex-col gap-1 justify-center items-center text-xs_mob" href="#">
-                            <span><ShopIcon/></span>
-                            <span> Корзина</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="flex gap-1 items-center">
-                    <div class="flex lg:gap-6 gap-4 items-center">
-                        <Avatar>
-                            <AvatarImage src="../public/img.png" alt="avatar" />
-                            <AvatarFallback>Avatar</AvatarFallback>
-                        </Avatar>
-                        <template v-if="!isMediumScreen">
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger><p class="max-w-20 text-s truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
-                                    <TooltipContent class="bg-surface" align="center" side="bottom">
-                                        <p class="max-w-50 text-s ">Алеasdasdasdasdксей</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
-                        </template>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </template>
+
 
 </template>
 

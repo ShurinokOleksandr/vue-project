@@ -83,14 +83,20 @@ export default {
         sm: "calc(var(--radius) - 4px)",
         lg: "var(--radius)",
       },
+      // screens: {
+      //   '2xl': '1208px',
+      //   xl: '1208px',
+      //   lg: '1208px',
+      //   sm: '360px',
+      //   md: '768px',  // контейнер 100% ширины на малых экранах
+      // },
       screens: {
         '2xl': '1208px',
         xl: '1208px',
         lg: '1208px',
-        sm: '360px',
-        md: '768px',  // контейнер 100% ширины на малых экранах
+        sm: '336px',
+        md: '736px',  // контейнер 100% ширины на малых экранах
       },
-
     },
     fontSize: {
       xs_header: ['var(--fs-h-xs)', {
@@ -147,19 +153,26 @@ export default {
     },
     container: {
       padding: {
-        DEFAULT: '6px',
-        '2xl': '6px',
-        xl: '6px',
-        lg: '6px',
-        md: '6px',
-        sm: '6px',
-      },
+              DEFAULT: '4px',
+              '2xl': '4px',
+              xl: '4px',
+              lg: '4px',
+              md: '4px',
+              sm: '4px',
+            },
+      // width: {
+      //   '2xl': '1216px',
+      //   xl: '1216px',
+      //   lg: '1216px',
+      //   md: '776px',
+      //   sm: '368px',
+      // },
       width: {
         '2xl': '1208px',
         xl: '1208px',
         lg: '1208px',
-        md: '728px',  
-        sm: '100%',
+        md: '736px',
+        sm: '336px',
       },
       center: true,
     },

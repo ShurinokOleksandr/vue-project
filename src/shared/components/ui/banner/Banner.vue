@@ -8,7 +8,7 @@ const isSmallScreen = useMediaQuery('(max-width:768px)')
 <template>
     <div class="bg-white relative xl:h-[200px] md:h-40 sm:h-20   ">
         <img class="absolute w-full h-full object-cover" src="@/assets/banner-img/banner.png" alt="Banner">
-        <div class="container flex items-center  md:justify-normal sm:justify-center  h-full gap-x-[8px]">
+        <div class="container flex items-center  md:justify-center sm:justify-center  h-full gap-x-[8px]">
             <template v-if="!isSmallScreen">
                 <div>
                     <img
