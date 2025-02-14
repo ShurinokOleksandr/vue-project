@@ -11,7 +11,7 @@ const isMediumScreen = useMediaQuery('(max-width:1208px)')
 
 <template>
     <template v-if="isSmallScreen">
-        <div class="  bg-surface shadow-default-s">
+        <div class="sticky inset-x-0 bottom-0 bg-surface shadow-default-s">
             <nav class="flex justify-between items-center px-4 py-2">
                 <Button variant="ghost" size="icon" >
                     <span class="inline-flex flex-col gap-2 justify-center items-center">

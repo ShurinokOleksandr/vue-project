@@ -34,7 +34,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
 
 <template>
     <header class="relative z-10 bg-surface shadow-default-s py-4">
-        <section class="container flex md:justify-center justify-between lg:gap-10 gap-5">
+        <section class="container flex   justify-between lg:gap-10 gap-5">
             <!--   LOGO   -->
             <div class="flex gap-10">
                 <div class="flex items-center gap-[11.41px]">
@@ -54,7 +54,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                         </Button>
                     </div>
                 </template>
-                <div class="relative flex items-center lg:w-[375px] md:w-[325px] w-[260px]">
+                <div class="relative flex items-center lg:w-[375px] md:w-[325px] sm:w-[260px] w-full">
                     <Input
                         class="h-10 w-full border-grayscale-light caret-secondary border-[1.5px] bg-surface text-sm text-surfaceText placeholder:text-grayscale-hard focus-visible:border-secondary"
                         :class="[inputValueModel ? 'border-b-[0px] rounded-b-none border-secondary' : '' ]"

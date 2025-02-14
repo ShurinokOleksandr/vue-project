@@ -8,8 +8,8 @@ import './assets/index.css';
     <div class="bg-backgroundMain relative">
         <Header/>
         <RouterView/>
-        <MobileFooter/>
     </div>
+    <MobileFooter/>
 </template>
 
 <style scoped>
