@@ -1,3 +1,4 @@
+export {  type ProductListProps,HeaderList } from './header-list'
 export { QuantitySelector } from './quantity-selector'
 export { Button } from './button'
 export { Banner } from './banner'
