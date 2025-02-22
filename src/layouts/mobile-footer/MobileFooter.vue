@@ -11,7 +11,7 @@ const isMediumScreen = useMediaQuery('(max-width:1208px)')
 
 <template>
     <template v-if="isSmallScreen">
-        <div class="  bg-surface shadow-default-s">
+        <div class="sticky inset-x-0 bottom-0 bg-surface shadow-default-s">
             <nav class="flex justify-between items-center px-4 py-2">
                 <Button variant="ghost" size="icon" >
                     <span class="inline-flex flex-col gap-2 justify-center items-center">
@@ -48,9 +48,9 @@ const isMediumScreen = useMediaQuery('(max-width:1208px)')
                         <template v-if="!isMediumScreen">
                             <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger><p class="max-w-20 text-s truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
+                                    <TooltipTrigger><p class="max-w-20 text-sm truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
                                     <TooltipContent class="bg-surface" align="center" side="bottom">
-                                        <p class="max-w-50 text-s ">Алеasdasdasdasdксей</p>
+                                        <p class="max-w-50 text-sm ">Алеasdasdasdasdксей</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
