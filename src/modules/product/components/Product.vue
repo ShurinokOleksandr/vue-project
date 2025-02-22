@@ -15,11 +15,11 @@ const addToCart = () => isLiked.value = !isLiked.value
 </script>
 
 <template>
-    <div class="bg-white shadow-default-xs xl:w-[17rem] md:w-[14rem] sm:w-[10rem] xl:h-[349px] h-full xl:last:block md:last:hidden">
+    <div class="bg-white rounded shadow-default-xs xl:w-[17rem] md:w-[14rem] sm:w-[10rem] xl:h-[349px] h-full xl:last:block md:last:hidden hover:shadow-primary-m transition-shadow">
         <div class="relative">
             <img src="/src/assets/blini.jpg" alt="product">
             <!--Ставить условие наличия скидки-->
-            <div class="absolute bottom-[10px]  left-[10px] bg-primary rounded text-s text-primaryText px-2 py-1">
+            <div class="absolute bottom-[10px]  left-[10px] bg-primary rounded text-sm text-primaryText px-2 py-1">
                 -50%
             </div>
             <div class="absolute top-2 right-2 w-8 h-8 bg-grayscale-lightest flex items-center justify-center rounded hover:bg-primaryMuted transition">
@@ -32,8 +32,8 @@ const addToCart = () => isLiked.value = !isLiked.value
             <div>
                 <div class="flex justify-between items-center">
                     <!-- Условие на рендер , если нету скидки скрывать первое и второе должно попадать вначало-->
-                    <p class="text-m_bold">44,50 ₴</p>
-                    <p class="text-s text-grayscale-hardest">50,50 ₴</p>
+                    <p class="text-md_bold">44,50 ₴</p>
+                    <p class="text-sm text-grayscale-hardest">50,50 ₴</p>
                 </div>
                 <!-- Условие на рендер , если нету скидки весь блок убрать-->
                 <div class="flex justify-between items-center">
@@ -42,7 +42,7 @@ const addToCart = () => isLiked.value = !isLiked.value
                 </div>
             </div>
             <div>
-                <p class="xl:w-[16rem] md:w-[13rem] sm:w-[9rem] h-[48px] xl:text-s text-surfaceText line-clamp-2">
+                <p class="xl:w-[16rem] md:w-[13rem] sm:w-[9rem] h-[48px] xl:text-sm text-surfaceText line-clamp-2">
                     Г/Ц Блинчики с мясомsss sвес, Россия Г/Ц Блинчики с мясом вес, Россия
                     Г/Ц Блинчики с мясомss вес, Россия Г/Ц Блинчики с мясом вес, Россия
                 </p>

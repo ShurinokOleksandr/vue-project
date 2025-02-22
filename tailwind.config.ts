@@ -76,7 +76,7 @@ export default {
         "fade-opacity": "fade-opacity 0.2s ease-in-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-     
+
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
         md: "calc(var(--radius) - 2px)",
@@ -90,6 +90,7 @@ export default {
       //   sm: '360px',
       //   md: '768px',  // контейнер 100% ширины на малых экранах
       // },
+  // это указывает на ширину контейнера
       screens: {
         '2xl': '1208px',
         xl: '1208px',
@@ -99,6 +100,26 @@ export default {
       },
     },
     fontSize: {
+      xs_header_mob: ['var(--fs-mob-h-xs)', {
+        lineHeight: 'var(--lh-mob-h-xs)',
+        fontWeight: 'var(--fw-bold)',
+      }],
+      sm_header_mob: ['var(--fs-mob-h-sm)', {
+        lineHeight: 'var(--lh-mob-h-sm)',
+        fontWeight: 'var(--fw-bold)',
+      }],
+      md_header_mob: ['var(--fs-mob-h-md)', {
+        lineHeight: 'var(--lh-mob-h-md)',
+        fontWeight: 'var(--fw-bold)',
+      }],
+      lg_header_mob: ['var(--fs-mob-h-lg)', {
+        lineHeight: 'var(--lh-mob-h-lg)',
+        fontWeight: 'var(--fw-bold)',
+      }],
+      xl_header_mob: ['var(--fs-mob-h-xl)', {
+        lineHeight: 'var(--lh-mob-h-xl)',
+        fontWeight: 'var(--fw-bold)',
+      }],
       xs_header: ['var(--fs-h-xs)', {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-h-xs)',
@@ -123,33 +144,33 @@ export default {
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-xs)',
       }],
+      md_bold: ['var(--fs-md)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-md)',
+      }],
+      lg_bold: ['var(--fs-lg)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-lg)',
+      }],
+      sm_bold: ['var(--fs-sm)', {
+        fontWeight: 'var(--fw-bold)',
+        lineHeight: 'var(--lh-sm)',
+      }],
       xl_bold: ['var(--fs-xl)',{
         fontWeight: 'var(--fw-bold)',
         lineHeight: 'var(--lh-xl)',
       }],
-      m_bold: ['var(--fs-md)', {
-        fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-md)',
-      }],
-      l_bold: ['var(--fs-lg)', {
-        fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-lg)',
-      }],
-      s_bold: ['var(--fs-sm)', {
-        fontWeight: 'var(--fw-bold)',
-        lineHeight: 'var(--lh-sm)',
-      }],
       xs_mob: ['var(--fs-m-xs)', 'var(--lh-m-xs)'],
       xl_mob: ['var(--fs-m-xl)', 'var(--lh-m-xl)'],
-      s_mob: ['var(--fs-m-sm)', 'var(--lh-m-sm)'],
-      m_mob: ['var(--fs-m-md)', 'var(--lh-m-md)'],
-      l_mob: ['var(--fs-m-lg)', 'var(--lh-m-lg)'],
+      sm_mob: ['var(--fs-m-sm)', 'var(--lh-m-sm)'],
+      md_mob: ['var(--fs-m-md)', 'var(--lh-m-md)'],
+      lg_mob: ['var(--fs-m-lg)', 'var(--lh-m-lg)'],
       '2xl':['var(--fs-2xl)','var(--lh-2xl)'],
       xs: ['var(--fs-xs)', 'var(--lh-xs)'],
       xl: ['var(--fs-xl)', 'var(--lh-xl)'],
-      s: ['var(--fs-sm)', 'var(--lh-sm)'],
-      m: ['var(--fs-md)', 'var(--lh-md)'],
-      l: ['var(--fs-lg)', 'var(--lh-lg)'],
+      sm: ['var(--fs-sm)', 'var(--lh-sm)'],
+      md: ['var(--fs-md)', 'var(--lh-md)'],
+      lg: ['var(--fs-lg)', 'var(--lh-lg)'],
     },
     container: {
       padding: {
