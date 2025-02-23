@@ -48,9 +48,9 @@ const isMediumScreen = useMediaQuery('(max-width:1208px)')
                         <template v-if="!isMediumScreen">
                             <TooltipProvider>
                                 <Tooltip>
-                                    <TooltipTrigger><p class="max-w-20 text-s truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
+                                    <TooltipTrigger><p class="max-w-20 text-sm truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
                                     <TooltipContent class="bg-surface" align="center" side="bottom">
-                                        <p class="max-w-50 text-s ">Алеasdasdasdasdксей</p>
+                                        <p class="max-w-50 text-sm ">Алеasdasdasdasdксей</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>

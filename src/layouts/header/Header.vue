@@ -48,7 +48,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
             <div class="flex items-center gap-4">
                 <template v-if="!isSmallScreen">
                     <div>
-                        <Button :size="isMediumScreen ? 'icon' : 'medium'" variant="secondary" >
+                        <Button :size="isMediumScreen ? 'icon' : 'mediumIcon'" variant="secondary" >
                             <MenuIcon :class="[ff ? 'fill-secondary': 'fill-secondaryText' ]"/>
                             {{ isMediumScreen ? '' : "Каталог" }}
                         </Button>
@@ -63,7 +63,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                     />
                     <span class="absolute end-0 inset-y-0 flex items-center justify-center px-2 cursor-pointer">
                         <SearchIcon v-if="!inputValueModel"/>
-                        <ClearIcon v-if="inputValueModel" @click="clearInput"/>
+                        <ClearIcon @click="clearInput" v-else/>
                     </span>
                     <div
                         class="absolute flex items-center justify-center inset-x-0 top-10 start-0 end-0"
@@ -73,12 +73,12 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                             class="w-full h-[150px] overflow-auto rounded-t-none rounded py-2 px-4 border-x-[1.5px] border-b-[1.5px] border-secondary bg-surface text-sm text-surfaceText "
                         >
                             <ul class="flex flex-col gap-2">
-                                <li class=" hover:text-s_bold cursor-pointer">product</li>
-                                <li class=" hover:text-s_bold cursor-pointer">product</li>
-                                <li class=" hover:text-s_bold cursor-pointer">product</li>
-                                <li class=" hover:text-s_bold cursor-pointer">product</li>
-                                <li class=" hover:text-s_bold cursor-pointer">product</li>
-                                <li class=" hover:text-s_bold cursor-pointer">product</li>
+                                <li class=" hover:text-sm_bold cursor-pointer">product</li>
+                                <li class=" hover:text-sm_bold cursor-pointer">product</li>
+                                <li class=" hover:text-sm_bold cursor-pointer">product</li>
+                                <li class=" hover:text-sm_bold cursor-pointer">product</li>
+                                <li class=" hover:text-sm_bold cursor-pointer">product</li>
+                                <li class=" hover:text-sm_bold cursor-pointer">product</li>
                             </ul>
                         </div>
                     </div>
@@ -117,9 +117,9 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                                         <template v-if="!isMediumScreen">
                                             <TooltipProvider>
                                                 <Tooltip>
-                                                    <TooltipTrigger><p class="max-w-20 text-s truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
+                                                    <TooltipTrigger><p class="max-w-20 text-sm truncate">Алеasdasdasdasdксей</p></TooltipTrigger>
                                                     <TooltipContent class="bg-surface" align="center" side="bottom">
-                                                        <p class="max-w-50 text-s ">Алеasdasdasdasdксей</p>
+                                                        <p class="max-w-50 text-sm ">Алеasdasdasdasdксей</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>

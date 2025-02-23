@@ -147,6 +147,27 @@ layer(base);
   --fw-bold:700;
 
 
+  /*  Font Sizes for Headers  mobile 360- 768 */
+  /* Extra small text */
+  --fs-mob-h-xs:16px;
+  --lh-mob-h-xs:24px;
+
+  /* Small  text */
+  --fs-mob-h-sm:20px;
+  --lh-mob-h-sm:30px;
+
+  /* Medium text */
+  --fs-mob-h-md:24px;
+  --lh-mob-mob-h-md:36px;
+
+  /* Large text */
+  --fs-mob-h-lg:36px;
+  --lh-mob-h-lg:54px;
+
+  /* Extra large text*/
+  --fs-mob-h-xl:48px;
+  --lh-mob-h-xl:72px;
+
   /*  SHADOWS  */
 
 

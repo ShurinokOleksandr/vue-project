@@ -18,7 +18,7 @@ const isSmallScreen = useMediaQuery('(max-width:768px)')
                     >
                 </div>
             </template>
-            <p class="relative z-10 lg:text-2xl_bold lg:mt-0 md:mt-5 md:text-l_bold sm:text-m_bold text-surfaceText">
+            <p class="relative z-10 lg:text-2xl_bold lg:mt-0 md:mt-5 md:text-lg_bold sm:text-md_bold text-surfaceText">
                 Доставка бесплатно от 1000 ₴
             </p>
         </div>
