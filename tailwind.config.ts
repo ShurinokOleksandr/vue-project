@@ -98,6 +98,7 @@ export default {
         sm: '336px',
         md: '736px',  // контейнер 100% ширины на малых экранах
       },
+
     },
     fontSize: {
       xs_header_mob: ['var(--fs-mob-h-xs)', {
@@ -173,14 +174,14 @@ export default {
       lg: ['var(--fs-lg)', 'var(--lh-lg)'],
     },
     container: {
-      padding: {
-              DEFAULT: '4px',
-              '2xl': '4px',
-              xl: '4px',
-              lg: '4px',
-              md: '4px',
-              sm: '4px',
-            },
+      // padding: {
+      //         DEFAULT: '4px',
+      //         '2xl': '4px',
+      //         xl: '4px',
+      //         lg: '4px',
+      //         md: '4px',
+      //         sm: '4px',
+      //       },
       // width: {
       //   '2xl': '1216px',
       //   xl: '1216px',

@@ -13,11 +13,11 @@ const rating = ref(4)
     <div class="">
 
         <!--banner-->
-        <Banner/>
+        <banner/>
         <div class="container p-0 flex flex-col gap-[104px] mt-20">
-            <ProductList full-list-name="Все акции" list-name="Акции" />
-            <ProductList full-list-name="Все новинки" list-name="Новинки" />
-            <ProductList full-list-name="Все покупки" list-name="Покупали раньше" />
+            <product-list full-list-name="Все акции" list-name="Акции" />
+            <product-list full-list-name="Все новинки" list-name="Новинки" />
+            <product-list full-list-name="Все покупки" list-name="Покупали раньше" />
         </div>
         <div>
             <Article full-list-name="Все статьи" list-name="Статьи"/>
