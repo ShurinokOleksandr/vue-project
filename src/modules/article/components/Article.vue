@@ -8,8 +8,8 @@ defineProps<ProductListProps>();
 </script>
 
 <template>
-    <div class="container  flex flex-col gap-4 mt-20  h-full">
-        <header-list :full-list-name="fullListName" :list-name="listName" />
+    <div class="  flex flex-col gap-4 h-full">
+        <header-list :list-name="listName" :all-list="allList" />
         <div class="flex md:flex-row flex-col justify-between gap-4 mt-2  h-full">
             <article-cart/>
             <article-cart/>
