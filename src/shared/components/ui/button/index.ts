@@ -16,6 +16,7 @@ export const buttonVariants = cva(
           'bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90',
         default:
           'bg-primary text-primary-foreground shadow-sm ',
+        "gray-scale":'text-grayscale-hardest bg-grayscale-lightest',
         link: 'text-primary underline-offset-4 hover:underline',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         primary:'bg-primary text-primaryText ',
