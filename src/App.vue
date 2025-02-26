@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import MobileFooter from '@/layouts/mobile-footer/MobileFooter.vue';
-import Header from '@/layouts/header/Header.vue';
+import { MobileFooter , Footer, Header } from '@/layouts';
 
 import './assets/index.css';
 </script>
@@ -8,6 +7,7 @@ import './assets/index.css';
     <div class="bg-backgroundMain relative">
         <Header/>
         <RouterView/>
+        <Footer/>
     </div>
     <MobileFooter/>
 </template>
