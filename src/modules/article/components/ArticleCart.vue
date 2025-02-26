@@ -10,7 +10,7 @@ const isCartHover = useElementHover(cartRefHover)
 <template>
     <div class="bg-white max-w-[376px] rounded shadow-default-xs overflow-hidden hover:shadow-primary-m transition-shadow  md:h-[420px] h-[300px]" ref="cartRefHover">
         <img class="object-cover w-full xl:h-[162px] md:h-[156px] h-[96px]" src="/src/assets/artImg.png" alt="article img">
-        <div class="flex flex-col gap-[10px] p-[10px] justify-between   md:h-[264px] h-[204px]">
+        <div class="flex flex-col p-[10px] justify-between xl:h-[258px] md:h-[264px] h-[204px]">
             <div class="flex flex-col gap-y-[10px]">
                 <p class="xl:text-xs text-xs_mob text-grayscale-hard line-clamp-1">05.03.2021</p>
                 <p class="xl:text-xs_header text-xs_header_mob text-surfaceText md:line-clamp-3 line-clamp-2">
