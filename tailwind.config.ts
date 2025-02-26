@@ -18,6 +18,7 @@ export default {
           error:"var(--error)",
           info:"var(--info)",
         },
+        backgroundSecond:"var(--background-second)",
         backgroundText: "var(--background-text)",
         backgroundMain:"var(--background-main)",
         secondaryMuted:"var(--secondary-muted)",

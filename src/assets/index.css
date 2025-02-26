@@ -47,6 +47,8 @@ layer(base);
   --background: hsla(36, 8%, 95%, 1);
   --background-text: hsla(36, 47%, 11%, 1);
   --background-main:hsla(47, 63%, 95%, 1);
+  --background-second:hsla( 47 , 66%, 93%, 1);
+
 
   --surface: hsla(0, 0%, 100%, 1);
   --surface-text: hsla(0, 0%, 25%, 1);
