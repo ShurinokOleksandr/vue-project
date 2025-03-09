@@ -1,9 +1,14 @@
 <script setup lang="ts">
 
-import { GoogleMapSection } from '@/modules/google-map-section';
-import { ProductList } from '@/modules/product-list';
+// import { GoogleMapSection } from '@/modules/google-map-section';
+// import { ProductList } from '@/modules/product-list';
 import { Banner } from '@/shared/components/ui';
-import { Article } from '@/modules/article';
+// import { Article } from '@/modules/article';
+import { defineAsyncComponent } from 'vue';
+// Определяем асинхронные компоненты
+const ProductList = defineAsyncComponent(() => import('../../modules/product-list/components/ProductList.vue'));
+// const GoogleMapSection = defineAsyncComponent(() => import('../../modules/google-map-section/components/GoogleMapSection.vue'));
+const Article = defineAsyncComponent(() => import('../../modules/article/components/Article.vue'));
 </script>
 
 <template>
@@ -13,7 +18,7 @@ import { Article } from '@/modules/article';
             <product-list all-list="Все акции" list-name="Акции" />
             <product-list all-list="Все новинки" list-name="Новинки" />
             <product-list list-name="Покупали раньше" all-list="Все покупки" />
-            <google-map-section list-name="Наши магазины"/>
+            <!--                <google-map-section list-name="Наши магазины"/>-->
             <Article all-list="Все статьи" list-name="Статьи"/>
         </div>
     </div>

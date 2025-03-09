@@ -1,4 +1,4 @@
-import { InstagramIcon, FacebookIcon, TelegramIcon, XIcon } from '@/shared/components';
+import { defineAsyncComponent } from 'vue';
 
 export const links = [
     {
@@ -22,6 +22,12 @@ export const links = [
         path:'#'
     },
 ]
+const InstagramIcon = defineAsyncComponent(() => import('../component/icons/InstagramIcon.vue'));
+const TelegramIcon = defineAsyncComponent(() => import('../component/icons/TelegramIcon.vue'));
+const FacebookIcon = defineAsyncComponent(() => import('../component/icons/FacebookIcon.vue'));
+const XIcon = defineAsyncComponent(() => import('../component/icons/XIcon.vue'));
+
+
 export const footerIcons = [
     {
         component:InstagramIcon,

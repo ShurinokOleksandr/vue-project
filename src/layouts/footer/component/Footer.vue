@@ -2,13 +2,14 @@
 import { DesignerLogoIcon, PhoneIcon } from '@/shared/components';
 
 import { footerIcons, links } from '../helpers';
+
 </script>
 
 <template>
-    <footer class=" bg-backgroundSecond bg-[url(/src/assets/bg.png)] lg:h-[146px] h-full mt-[60px] ">
-        <div class="container gap-10 md:gap-0 py-6 flex justify-between md:flex-row flex-col items-center md:items-start ">
+    <footer class=" bg-backgroundSecond bg-[url(/src/assets/bg.png)] lg:h-[146px] h-full mt-[60px] " ref="target">
+        <div class="container gap-10 md:gap-0 py-6 flex justify-between md:flex-row flex-col items-center md:items-start " >
             <div class="flex gap-10 items-center flex-col md:flex-row">
-                <img src="/src/assets/logo-footer.png" alt="logo">
+                <img src="/src/assets/logo-footer.png" loading="lazy" alt="logo">
                 <ul class="flex lg:gap-10 gap-5 items-center flex-wrap flex-col md:flex-row">
                     <li
                         class="lg:text-xs text-sm_mob text-surfaceText"

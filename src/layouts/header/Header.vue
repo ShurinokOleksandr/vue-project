@@ -12,12 +12,10 @@ import {
 } from '@/shared/components/icons';
 import { TooltipProvider, TooltipContent, TooltipTrigger, Tooltip } from '@/shared/components/ui/tooltip';
 import { AvatarFallback, AvatarImage, Avatar } from '@/shared/components/ui/avatar';
-import {
-    Button,
-    Input
-} from '@/shared/components/ui';
+import { Button, Input } from '@/shared/components/ui';
 import { useMediaQuery } from '@vueuse/core';
- import { ref } from 'vue';
+import {  ref } from 'vue';
+
 const ff = ref(false)
 const inputModel = defineModel<string>({ default: ''})
 const inputValueModel = ref(inputModel)
@@ -54,7 +52,7 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                         </Button>
                     </div>
                 </template>
-                <div class="relative flex items-center lg:w-[375px] md:w-[325px] sm:w-[260px] w-full">
+                <div class="relative z-30 flex items-center lg:w-[375px] md:w-[325px] sm:w-[260px] w-full">
                     <Input
                         class="h-10 w-full border-grayscale-light caret-secondary border-[1.5px] bg-surface text-sm text-surfaceText placeholder:text-grayscale-hard focus-visible:border-secondary"
                         :class="[inputValueModel ? 'border-b-[0px] rounded-b-none border-secondary' : '' ]"
@@ -66,13 +64,13 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                         <ClearIcon @click="clearInput" v-else/>
                     </span>
                     <div
-                        class="absolute flex items-center justify-center inset-x-0 top-10 start-0 end-0"
+                        class="absolute flex items-center justify-center inset-x-0 top-10 start-0 end-0 z-1000"
                         v-if="inputValueModel"
                     >
                         <div
-                            class="w-full h-[150px] overflow-auto rounded-t-none rounded py-2 px-4 border-x-[1.5px] border-b-[1.5px] border-secondary bg-surface text-sm text-surfaceText "
+                            class="relative w-full h-[150px] overflow-auto rounded-t-none rounded py-2 px-4 border-x-[1.5px] border-b-[1.5px] border-secondary bg-surface text-sm text-surfaceText z-1000 "
                         >
-                            <ul class="flex flex-col gap-2">
+                            <ul class="relative flex flex-col gap-2 z-1000">
                                 <li class=" hover:text-sm_bold cursor-pointer">product</li>
                                 <li class=" hover:text-sm_bold cursor-pointer">product</li>
                                 <li class=" hover:text-sm_bold cursor-pointer">product</li>
@@ -130,9 +128,6 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
                                             <ChevronDownIcon class="rotate-180" />
                                         </Button>
                                     </template>
-                                </div>
-                                <div>
-
                                 </div>
                             </li>
                         </ul>

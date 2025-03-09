@@ -17,7 +17,7 @@ const addToCart = () => isLiked.value = !isLiked.value
 <template>
     <div class="bg-white rounded shadow-default-xs xl:w-[17rem] md:w-[14rem] sm:w-[10rem] xl:h-[349px] h-full xl:last:block md:last:hidden hover:shadow-primary-m transition-shadow">
         <div class="relative">
-            <img src="/src/assets/blini.jpg" alt="product">
+            <img src="/src/assets/blini.jpg" loading="lazy" alt="product">
             <!--Ставить условие наличия скидки-->
             <div class="absolute bottom-[10px]  left-[10px] bg-primary rounded text-sm text-primaryText px-2 py-1">
                 -50%
