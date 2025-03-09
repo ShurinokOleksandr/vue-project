@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { DesignerLogoIcon, PhoneIcon } from '@/shared/components';
-
+import { DesignerLogoIcon, PhoneIcon } from './icons/index';
 import { footerIcons, links } from '../helpers';
 
 </script>
