@@ -46,10 +46,12 @@ const isMobileScreen = useMediaQuery('(max-width:470px)')
             <div class="flex items-center gap-4">
                 <template v-if="!isSmallScreen">
                     <div>
-                        <Button :size="isMediumScreen ? 'icon' : 'mediumIcon'" variant="secondary" >
-                            <MenuIcon :class="[ff ? 'fill-secondary': 'fill-secondaryText' ]"/>
-                            {{ isMediumScreen ? '' : "Каталог" }}
-                        </Button>
+                        <router-link to="/catalog">
+                            <Button :size="isMediumScreen ? 'icon' : 'mediumIcon'" variant="secondary" >
+                                <MenuIcon :class="[ff ? 'fill-secondary': 'fill-secondaryText' ]"/>
+                                {{ isMediumScreen ? '' : "Каталог" }}
+                            </Button>
+                        </router-link>
                     </div>
                 </template>
                 <div class="relative z-30 flex items-center lg:w-[375px] md:w-[325px] sm:w-[260px] w-full">
