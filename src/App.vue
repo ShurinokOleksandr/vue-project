@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useMediaQuery } from '@vueuse/core';
 import { defineAsyncComponent } from 'vue';
-import { Header , Footer} from '@/layouts';
+import { Footer, Header } from '@/layouts';
 
 import './assets/index.css';
 
@@ -13,9 +13,7 @@ const MobileFooter = defineAsyncComponent(() => import('./layouts/mobile-footer/
 </script>
 
 <template>
-    <div class="bg-backgroundMain relative">
-        <router-link to="/">home</router-link>
-        <router-link to="/catalog">catalog</router-link>
+    <div class="bg-backgroundMain relative grid grid-rows-[auto_1fr_auto] min-h-screen">
         <Header/>
         <RouterView/>
         <Footer />
